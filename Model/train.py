@@ -27,8 +27,8 @@ def train_dat():
     model.fit(X, y, epochs=50, batch_size=32, validation_split=0.1, callbacks=[early_stop])
 
     # 4. 저장
-    model.save("Model/gru_model.keras")
-    print("✅ 모델 저장 완료: gru_model.keras")
+    model.save("Model/gru_model.h5")
+    print("✅ 모델 저장 완료: gru_model.h5")
 
 if __name__ == "__main__":
     train_dat()

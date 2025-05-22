@@ -57,11 +57,11 @@ class PricePredictorApp:
             return
 
         # 모델 없으면 학습
-        if not os.path.exists("Model/gru_model.keras"):
+        if not os.path.exists("Model/gru_model.h5"):
             from train import train_dat
             train_dat()
 
-        model = load_model("Model/gru_model.keras")
+        model = load_model("Model/gru_model.h5")
 
         # 시퀀스 시작: 가장 처음부터 예측
         sequence = df_gpu.iloc[:self.seq_len].copy()
@@ -93,10 +93,12 @@ class PricePredictorApp:
             if i + self.seq_len < len(df_gpu):
                 next_row = df_gpu.iloc[i + self.seq_len].copy()
             else:
-                next_row = sequence.iloc[-1:].copy()
+                next_row = sequence.iloc[-1].copy()
 
             next_row['price_scaled'] = pred_scaled
-            sequence = pd.concat([sequence, next_row.to_frame().T], ignore_index=True)
+            next_row_df = pd.DataFrame([next_row])
+
+            sequence = pd.concat([sequence, next_row_df], ignore_index=True)
             sequence = sequence[-self.seq_len:]
 
         self.draw_plot(df_gpu, dates, preds)
@@ -152,7 +154,7 @@ class PricePredictorApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    if not os.path.exists("gru_model.keras"):
+    if not os.path.exists("gru_model.h5"):
         print("모델이 없어 학습을 시작합니다...")
         train_dat()
     app = PricePredictorApp(root)
