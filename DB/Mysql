@@ -1,0 +1,60 @@
+Mysql 사용
+
+
+인터프린터 적용 명령어(터미널에서 실행)
+
+pip install -r requirements.txt
+
+
+
+데이터베이스 없을시 스키마와 테이블 생성후
+
+
+db_config.py
+데이터베이스 이름
+DB_USER = 'root'
+DB_PASSWORD = '0000'
+DB_NAME = 'danawa_vga'
+DB_HOST = 'localhost'
+관리
+
+DB_insert.py
+데이터베이스
+데이터 삽입
+정제
+(3분 정도 걸림)
+
+main_gui.py
+실행후 그래픽카드 모델을 선택후 2개월 예측 버튼을 누르면 2개월 예측 그래프 표시
+
+
+-------------------------테이블생성------------------------
+
+
+CREATE DATABASE danawa_vga;
+
+USE danawa_vga;
+
+CREATE TABLE `danawa_vga`.`vga_price` (
+  `num` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NULL,
+  `date` DATE NULL,
+  `price` INT NULL,
+  PRIMARY KEY (`num`));
+
+CREATE TABLE `danawa_vga`.`vga_ref` (
+  `num` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NULL,
+  `date` DATE NULL,
+  `price` INT NULL,
+  PRIMARY KEY (`num`));
+
+CREATE TABLE `danawa_vga`.`ref_vga_stats` (
+  `num` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255),
+  `date` DATE,
+  `avg_price` INT,
+  `min_price` INT,
+  `max_price` INT,
+  `std_dev` FLOAT
+);

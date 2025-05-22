@@ -1,0 +1,117 @@
+# 데이터 처리 및 수치 연산 관련 라이브러리
+import pandas as pd
+import numpy as np
+import re
+
+# 데이터 정규화를 위한 MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.callbacks import EarlyStopping
+from DB.db_config import df_all
+
+# 시리즈별로 정규화하는 함수
+def extract_ids(name):
+    match = re.search(r'RTX(\d{4})', name)
+    level_match = re.search(r'(\d{2})(?=\D|$)', name)
+    capacity_match = re.search(r'(\d+)\s?GB', name.upper())
+    if match and level_match:
+        series = int(match.group(1)) // 1000
+        level = int(level_match.group(1))
+        capacity = int(capacity_match.group(1))
+    else:
+        series = -1
+        level = -1
+        capacity = -1
+    return series, level, capacity
+
+# 이름, 레벨, 용량 추출
+def assign_metadata(df):
+    df[['series_id', 'level_id', 'capacity_id']] = df['name'].apply(lambda x: pd.Series(extract_ids(x)))
+    return df
+
+# 정규화
+def add_rolling_features(df):
+    df.sort_values(['name', 'date'], inplace=True)
+    df['rolling_mean_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).mean().bfill())
+    df['rolling_std_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).std().bfill())
+    df['rolling_mean_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).mean().bfill())
+    df['rolling_std_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).std().bfill())
+
+    scaler = {}
+
+    for sid, group in df.groupby('series_id'):
+        scaler_price = MinMaxScaler()
+        scaler_mean = MinMaxScaler()
+        scaler_std = MinMaxScaler()
+
+        df.loc[group.index, 'price_scaled'] = scaler_price.fit_transform(group[['avg_price']])
+        df.loc[group.index, 'mean_scaled_7'] = scaler_mean.fit_transform(group[['rolling_mean_7']])
+        df.loc[group.index, 'std_scaled_7'] = scaler_std.fit_transform(group[['rolling_std_7']])
+        df.loc[group.index, 'mean_scaled_30'] = scaler_mean.fit_transform(group[['rolling_mean_30']])
+        df.loc[group.index, 'std_scaled_30'] = scaler_std.fit_transform(group[['rolling_std_30']])
+
+        scaler[sid] = {
+            'price': scaler_price, 'mean_7': scaler_mean, 'std_7': scaler_std,
+            'mean_30': scaler_mean, 'std_30': scaler_std
+        }
+    return df, scaler
+
+# 시퀸스 생성
+def create_sequences(df_group, seq_len):
+    X_price, X_series_id, X_level_id, X_capacity_id = [], [], [], []
+    X_mean_7, X_std_7, X_mean_30, X_std_30, y = [], [], [], [], []
+
+    series_id = df_group['series_id'].iloc[0]
+    level_id = df_group['level_id'].iloc[0]
+    capacity_id = df_group['capacity_id'].iloc[0]
+
+    price = df_group['price_scaled'].values
+    mean_7 = df_group['mean_scaled_7'].values
+    std_7 = df_group['std_scaled_7'].values
+    mean_30 = df_group['mean_scaled_30'].values
+    std_30 = df_group['std_scaled_30'].values
+
+    for i in range(len(df_group) - seq_len):
+        X_p = np.stack([price[i:i+seq_len], mean_7[i:i+seq_len], std_7[i:i+seq_len],
+                        mean_30[i:i+seq_len], std_30[i:i+seq_len]], axis=1)
+        X_price.append(X_p)
+        X_series_id.append([series_id] * seq_len)
+        X_level_id.append([level_id] * seq_len)
+        X_capacity_id.append([capacity_id] * seq_len)
+        X_mean_7.append(mean_7[i:i+seq_len])
+        X_std_7.append(std_7[i:i+seq_len])
+        X_mean_30.append(mean_30[i:i+seq_len])
+        X_std_30.append(std_30[i:i+seq_len])
+        y.append(price[i + seq_len])
+
+    return X_price, X_series_id, X_level_id, X_capacity_id, X_mean_7, X_std_7, X_mean_30, X_std_30, y
+
+# 전체 시퀸스
+def generate_all_sequences(df, seq_len=20):
+    X_price, X_series_id, X_level_id, X_capacity_id = [], [], [], []
+    X_mean_7, X_std_7, X_mean_30, X_std_30, y = [], [], [], [], []
+
+    for name, group in df.groupby('name'):
+        xp, xs, xl, xc, xm7, xs7, xm30, xs30, yy = create_sequences(group, seq_len)
+        X_price += xp
+        X_series_id += xs
+        X_level_id += xl
+        X_capacity_id += xc
+        X_mean_7 += xm7
+        X_std_7 += xs7
+        X_mean_30 += xm30
+        X_std_30 += xs30
+        y += yy
+
+    return {
+        'X_price': np.array(X_price),
+        'X_series_id': np.array(X_series_id),
+        'X_level_id': np.array(X_level_id),
+        'X_capacity_id': np.array(X_capacity_id),
+        'X_mean_7': np.array(X_mean_7),
+        'X_std_7': np.array(X_std_7),
+        'X_mean_30': np.array(X_mean_30),
+        'X_std_30': np.array(X_std_30),
+        'y': np.array(y)
+    }

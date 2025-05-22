@@ -1,0 +1,27 @@
+#   C:\Users\wnsrb\AppData\Local\Programs\Python\Python310\python.exe -m pip install tensorflow==2.13.0 keras==2.13.1 numpy==1.24.3
+#   pip install -r Model/module
+
+
+# MySQL 관련 패키지
+pymysql
+mysql-connector-python
+
+# 데이터 처리
+pandas
+numpy
+
+# 머신러닝
+scikit-learn
+
+# 딥러닝 (TensorFlow 2.13과 호환)
+tensorflow==2.13.0
+keras==2.13.1
+
+# 시각화
+matplotlib
+mplcursors
+
+# 기타 (내장 모듈로 설치 불필요)
+# tkinter
+# re
+# statistics
