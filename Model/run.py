@@ -138,7 +138,7 @@ class PricePredictorApp:
         self.canvas.get_tk_widget().pack(pady=10)
 
         def format_tooltip(date, price):
-            return f"날짜: {date.strftime('%Y-%m-%d')}\n예측가: {price:.4f}"
+            return f"날짜: {date.strftime('%Y-%m-%d')}\n예측가: {int(round(price)):,}원"
 
         # cursor = mplcursors.cursor(line_predict, hover=True)
         # @cursor.connect("add")
