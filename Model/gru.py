@@ -34,11 +34,11 @@ def assign_metadata(df):
 def add_rolling_features(df):
     df.sort_values(['name', 'date'], inplace=True)
 
-    # A. 가공없이 피쳐만 생성
-    df['rolling_mean_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).mean().bfill())
-    df['rolling_std_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).std().bfill())
-    df['rolling_mean_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).mean().bfill())
-    df['rolling_std_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).std().bfill()) # ~A
+    # # A. 가공없이 피쳐만 생성
+    # df['rolling_mean_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).mean().bfill())
+    # df['rolling_std_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).std().bfill())
+    # df['rolling_mean_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).mean().bfill())
+    # df['rolling_std_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).std().bfill()) # ~A
 
     # # B. rolling feature 생성 후 NaN(결측값) 평균 값으로 처리
     # for window in [7, 30]:
@@ -57,6 +57,25 @@ def add_rolling_features(df):
     #         .bfill().ffill()
     #         .fillna(0.0)
     #     )   # ~B
+
+    # C. A&B 혼합 방식
+    for window in [7, 30]:
+        mean_col = f'rolling_mean_{window}'
+        std_col = f'rolling_std_{window}'
+
+        df[mean_col] = (
+            df.groupby('name')['avg_price']
+            .transform(lambda x: x.rolling(window).mean())
+            .bfill()
+            .ffill()
+        )
+
+        df[std_col] = (
+            df.groupby('name')['avg_price']
+            .transform(lambda x: x.rolling(window).std())
+            .bfill()
+            .ffill()
+        )   # ~C
 
     scaler = {}
 
@@ -77,7 +96,6 @@ def add_rolling_features(df):
         }
 
     return df, scaler
-
 
 # 시퀸스 생성
 def create_sequences(df_group, seq_len):
