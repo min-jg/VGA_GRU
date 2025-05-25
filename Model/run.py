@@ -154,7 +154,7 @@ class PricePredictorApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    if not os.path.exists("gru_model.h5"):
+    if not os.path.exists("Model/gru_model.h5"):
         print("모델이 없어 학습을 시작합니다...")
         train_dat()
     app = PricePredictorApp(root)
