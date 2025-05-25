@@ -29,10 +29,10 @@ def train_dat():
 
     # 3. 학습
     early_stop = EarlyStopping(patience=10, restore_best_weights=True)                                  # A. 기존 방식
-    model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, callbacks=[early_stop])
+    model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop])
     # early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)              # B. lr 추가 방식
     # reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3, min_lr=1e-6, verbose=1)
-    # model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, callbacks=[early_stop, reduce_lr])
+    # model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop, reduce_lr])
 
     # 4. 저장
     model.save("Model/gru_model.h5")
