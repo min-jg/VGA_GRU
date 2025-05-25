@@ -81,9 +81,18 @@ class PricePredictorApp:
                                 'mean_scaled_30', 'std_scaled_30']].values
             X_input = np.expand_dims(X_input, axis=0)
 
-            pred_scaled = model.predict(X_input, verbose=0)[0][0]
+            pred_scaled = model.predict(X_input, verbose=0)[0][0]             # A. 가격 자체를 예측
             pred_real = scaler_price.inverse_transform([[pred_scaled]])[0][0]
-            preds.append(pred_real)
+            preds.append(round(pred_real))
+
+            # last_scaled_price = sequence['price_scaled'].iloc[-1]  # B. 변화량 예측 / 마지막 시점의 정규화 된 가격
+            # pred_delta = model.predict(X_input, verbose=0)[0][0]
+            # pred_scaled = last_scaled_price + pred_delta  # 누적 예측값
+            #
+            # # 예측값 역정규화 및 반올림    ~ B
+            # pred_real = scaler_price.inverse_transform([[pred_scaled]])[0][0]
+            # pred_real = round(max(pred_real, 0))
+            # preds.append(pred_real)
 
             # 날짜 기록
             dates.append(current_date)
@@ -95,7 +104,7 @@ class PricePredictorApp:
             else:
                 next_row = sequence.iloc[-1].copy()
 
-            next_row['price_scaled'] = pred_scaled
+            next_row['price_scaled'] = pred_scaled  # ✅ 업데이트된 가격 사용
             next_row_df = pd.DataFrame([next_row])
 
             sequence = pd.concat([sequence, next_row_df], ignore_index=True)
@@ -109,9 +118,8 @@ class PricePredictorApp:
         fig, ax = plt.subplots(figsize=(10, 4), dpi=100)
 
         ax.plot(df_gpu['date'], df_gpu['avg_price'], label='실제 평균가', color='blue')
-        ax.plot(dates, preds, label='예측가 (전체)', color='red', linestyle='--')
+        line_predict = ax.plot(dates, preds, label='예측가 (전체)', color='red', linestyle='--')
 
-        ax.plot(dates[:1], preds[:1], 'o', color='green', label='예측 시작점')
         ax.axvline(df_gpu['date'].max(), color='gray', linestyle='--', alpha=0.5)
 
         ax.set_title('가격 추세 및 2개월 예측')
@@ -131,6 +139,24 @@ class PricePredictorApp:
 
         def format_tooltip(date, price):
             return f"날짜: {date.strftime('%Y-%m-%d')}\n예측가: {price:.4f}"
+
+        # cursor = mplcursors.cursor(line_predict, hover=True)
+        # @cursor.connect("add")
+        # def on_add(sel):
+        #     index = int(round(sel.index))
+        #     date = dates
+        #     price = preds
+        #
+        #     r_price = None
+        #     if 'avg_price' in locals() and date in df_gpu['date']:
+        #         r_date = df_gpu['date'].index(date)
+        #         r_price = df_gpu['avg_price']
+        #
+        #     tooltip = f"날짜: {date.strftime('%Y-%m-%d')}\n예측가: {int(price):,}원"
+        #     if r_price is not None:
+        #         tooltip += f"\n실제가: {int(r_price):,}원"
+        #
+        #     sel.annotation.set(text=tooltip)
 
         cursor1 = mplcursors.cursor(ax.lines[0], hover=True)
 
@@ -154,8 +180,9 @@ class PricePredictorApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    if not os.path.exists("gru_model.h5"):
+    if not os.path.exists("Model/gru_model.h5"):
         print("모델이 없어 학습을 시작합니다...")
         train_dat()
+    print(f"학습된 모델 {'gru_model'} 이 존재합니다.")
     app = PricePredictorApp(root)
     root.mainloop()

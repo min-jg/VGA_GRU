@@ -5,10 +5,10 @@ import re
 
 # 데이터 정규화를 위한 MinMaxScaler
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
-from tensorflow.keras.callbacks import EarlyStopping
-from DB.db_config import df_all
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import LSTM, Dense, Dropout
+# from tensorflow.keras.callbacks import EarlyStopping
+# from DB.db_config import df_all
 
 # 시리즈별로 정규화하는 함수
 def extract_ids(name):
@@ -33,10 +33,30 @@ def assign_metadata(df):
 # 정규화
 def add_rolling_features(df):
     df.sort_values(['name', 'date'], inplace=True)
+
+    # A. 가공없이 피쳐만 생성
     df['rolling_mean_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).mean().bfill())
     df['rolling_std_7'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(7).std().bfill())
     df['rolling_mean_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).mean().bfill())
-    df['rolling_std_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).std().bfill())
+    df['rolling_std_30'] = df.groupby('name')['avg_price'].transform(lambda x: x.rolling(30).std().bfill()) # ~A
+
+    # # B. rolling feature 생성 후 NaN(결측값) 평균 값으로 처리
+    # for window in [7, 30]:
+    #     mean_col = f'rolling_mean_{window}'
+    #     std_col = f'rolling_std_{window}'
+    #
+    #     df[mean_col] = (
+    #         df.groupby('name')['avg_price']
+    #         .transform(lambda x: x.rolling(window).mean())
+    #         .bfill().ffill()
+    #         .fillna(df['avg_price'].mean())
+    #     )
+    #     df[std_col] = (
+    #         df.groupby('name')['avg_price']
+    #         .transform(lambda x: x.rolling(window).std())
+    #         .bfill().ffill()
+    #         .fillna(0.0)
+    #     )   # ~B
 
     scaler = {}
 
@@ -55,7 +75,9 @@ def add_rolling_features(df):
             'price': scaler_price, 'mean_7': scaler_mean, 'std_7': scaler_std,
             'mean_30': scaler_mean, 'std_30': scaler_std
         }
+
     return df, scaler
+
 
 # 시퀸스 생성
 def create_sequences(df_group, seq_len):
@@ -83,7 +105,9 @@ def create_sequences(df_group, seq_len):
         X_std_7.append(std_7[i:i+seq_len])
         X_mean_30.append(mean_30[i:i+seq_len])
         X_std_30.append(std_30[i:i+seq_len])
-        y.append(price[i + seq_len])
+        y.append(price[i + seq_len])                        # A. 가격 예측 로직 수정
+        # delta = price[i + seq_len] - price[i + seq_len - 1] # B. 가격 변화량 기반 예측
+        # y.append(delta)
 
     return X_price, X_series_id, X_level_id, X_capacity_id, X_mean_7, X_std_7, X_mean_30, X_std_30, y
 

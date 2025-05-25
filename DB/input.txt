@@ -1,0 +1,2812 @@
+GeForce RTX 5090 D
+(86%)
+39,851
+NA
+GeForce RTX 5090
+(86%)
+39,831
+NA
+GeForce RTX 4090
+(83%)
+38,259
+2,153.94*
+GeForce RTX 5080
+(78%)
+36,030
+1,379.00
+GeForce RTX 4080
+(75%)
+34,441
+1,498.07*
+GeForce RTX 4080 SUPER
+(74%)
+34,257
+1,099.99*
+GeForce RTX 5070 Ti
+(71%)
+32,831
+999.99
+RTX PRO 6000 Blackwell Workstation Edition
+(70%)
+32,435
+NA
+RTX PRO 3000 Blackwell Generation Laptop GPU
+(70%)
+32,376
+NA
+GeForce RTX 4090 D
+(69%)
+31,936
+NA
+GeForce RTX 4070 Ti SUPER
+(69%)
+31,748
+1,701.19*
+GeForce RTX 4070 Ti
+(69%)
+31,646
+909.03*
+Radeon RX 7900 XTX
+(67%)
+31,155
+1,152.89
+GeForce RTX 5090 Laptop GPU
+(66%)
+30,688
+NA
+RTX 5000 Ada Generation
+(65%)
+30,036
+NA
+GeForce RTX 4070 SUPER
+(65%)
+29,982
+847.13*
+GeForce RTX 3090 Ti
+(64%)
+29,520
+1,990.00*
+GeForce RTX 5070
+(63%)
+28,952
+604.99
+Radeon RX 7900 XT
+(63%)
+28,902
+699.99
+Radeon PRO W7900
+(62%)
+28,871
+NA
+GeForce RTX 5080 Laptop GPU
+(62%)
+28,555
+NA
+RTX 6000 Ada Generation
+(62%)
+28,488
+NA
+Radeon RX 6950 XT
+(61%)
+28,116
+999.99*
+RTX 5000 Ada Generation Embedded GPU
+(60%)
+27,775
+NA
+Radeon PRO W7800
+(60%)
+27,499
+NA
+GeForce RTX 4090 Laptop GPU
+(59%)
+27,297
+NA
+RTX 4500 Ada Generation
+(59%)
+27,211
+NA
+Radeon RX 7900 GRE
+(59%)
+27,052
+539.99*
+GeForce RTX 4070
+(58%)
+26,944
+589.99*
+Radeon RX 9070 XT
+(58%)
+26,929
+859.99
+GeForce RTX 3080 Ti
+(58%)
+26,928
+1,556.33
+Radeon RX 6900 XT
+(58%)
+26,745
+1,509.67*
+GeForce RTX 3090
+(58%)
+26,656
+1,915.41
+GeForce RTX 3080 12GB
+(57%)
+26,578
+NA
+RTX 3500 Ada Generation Embedded GPU
+(54%)
+25,189
+NA
+GeForce RTX 3080
+(54%)
+25,134
+1,886.57
+Radeon RX 6800 XT
+(54%)
+25,016
+639.99*
+GeForce RTX 4080 Laptop GPU
+(54%)
+24,989
+NA
+Radeon RX 9070
+(54%)
+24,919
+679.99
+GeForce RTX 5070 Ti Laptop GPU
+(53%)
+24,368
+NA
+Radeon RX 7800 XT
+(52%)
+24,230
+599.99
+RTX 5000 Ada Generation Laptop GPU
+(52%)
+23,897
+NA
+GeForce RTX 5060
+(51%)
+23,775
+NA
+RTX 5880 Ada Generation
+(51%)
+23,751
+NA
+RTX 4000 Ada Generation
+(51%)
+23,717
+NA
+Radeon PRO W7700
+(51%)
+23,411
+NA
+GeForce RTX 3070 Ti
+(51%)
+23,390
+871.20
+Radeon RX 7900M
+(50%)
+23,312
+NA
+GeForce RTX 4060 Ti 16GB
+(49%)
+22,750
+449.99*
+GeForce RTX 4060 Ti
+(49%)
+22,729
+548.79
+RTX A6000
+(49%)
+22,597
+4,109.99*
+RTX A5000
+(49%)
+22,513
+2,229.99*
+GeForce RTX 5060 Ti
+(49%)
+22,469
+419.99
+L40
+(49%)
+22,466
+NA
+Radeon RX 7700 XT
+(48%)
+22,454
+469.99
+RTX 4000 Ada Generation Laptop GPU
+(48%)
+22,323
+NA
+GeForce RTX 3070
+(48%)
+22,241
+2,704.66
+Radeon RX 6800
+(48%)
+22,114
+834.37*
+NVIDIA A10
+(48%)
+22,064
+NA
+GRID RTX6000-6Q
+(47%)
+21,987
+NA
+RTX A5500
+(47%)
+21,872
+2,169.99*
+GeForce RTX 2080 Ti
+(47%)
+21,581
+1,299.99
+RTX A4500
+(46%)
+21,285
+1,799.00*
+Radeon RX 6750 XT
+(45%)
+20,743
+399.99*
+GeForce RTX 3060 Ti
+(44%)
+20,380
+529.99*
+RTX 4000 SFF Ada Generation
+(44%)
+20,355
+NA
+TITAN RTX
+(44%)
+20,332
+2,499.00*
+L40S
+(43%)
+20,023
+NA
+Radeon PRO W6800
+(43%)
+19,969
+1,849.99*
+Radeon RX 6750 GRE 12GB
+(43%)
+19,957
+NA
+Quadro RTX 8000
+(43%)
+19,862
+3,760.00*
+Quadro GV100
+(43%)
+19,833
+8,999.00*
+Radeon RX 6700 XT
+(43%)
+19,805
+943.93*
+RTX 3500 Ada Generation Laptop GPU
+(43%)
+19,799
+NA
+TITAN V
+(43%)
+19,739
+1,999.99*
+GeForce RTX 5060 Laptop GPU
+(43%)
+19,708
+NA
+GeForce RTX 4060
+(43%)
+19,707
+351.99*
+GeForce RTX 4070 Laptop GPU
+(42%)
+19,590
+NA
+RTX A4000
+(42%)
+19,543
+749.99*
+GeForce RTX 2080 SUPER
+(42%)
+19,498
+684.86*
+GeForce RTX 5070 Laptop GPU
+(42%)
+19,386
+NA
+GeForce RTX 3080 Ti Laptop GPU
+(42%)
+19,385
+NA
+Radeon RX 6700
+(41%)
+19,162
+NA
+TITAN Xp COLLECTORS EDITION
+(41%)
+18,850
+NA
+NVIDIA TITAN Xp
+(40%)
+18,781
+1,645.00*
+GeForce RTX 2080
+(40%)
+18,748
+800.61*
+GeForce GTX 1080 Ti
+(40%)
+18,596
+483.82*
+Quadro RTX 6000
+(40%)
+18,494
+6,300.00*
+GeForce RTX 2070 SUPER
+(39%)
+18,192
+539.99*
+Radeon RX 6750 GRE 10GB
+(39%)
+18,138
+NA
+A40-48Q
+(38%)
+17,864
+NA
+GeForce RTX 3070 Ti Laptop GPU
+(38%)
+17,789
+NA
+NVIDIA A10G
+(38%)
+17,660
+NA
+Radeon Pro W5700X
+(38%)
+17,591
+NA
+GeForce RTX 4060 Laptop GPU
+(38%)
+17,529
+NA
+Radeon Pro W6900X
+(37%)
+17,413
+NA
+Radeon 8060S
+(37%)
+17,371
+NA
+Radeon RX 6850M XT
+(37%)
+17,336
+NA
+RTX A5500 Laptop GPU
+(37%)
+17,269
+NA
+RTX 2000 Ada Generation
+(37%)
+17,173
+NA
+Radeon RX 6650 XT
+(37%)
+17,143
+459.99*
+Radeon RX 7600 XT
+(37%)
+17,110
+359.97
+Radeon RX 6650M XT
+(37%)
+17,071
+NA
+Radeon RX 7800M
+(37%)
+17,030
+NA
+Radeon RX 7650 GRE
+(37%)
+16,993
+NA
+TITAN V CEO Edition
+(37%)
+16,988
+NA
+RTX A4500 Laptop GPU
+(36%)
+16,854
+NA
+GeForce RTX 3060 12GB
+(36%)
+16,844
+329.99
+Radeon RX 7600
+(36%)
+16,605
+289.99
+Radeon RX 6600 XT
+(35%)
+16,480
+439.99*
+GeForce RTX 2060 SUPER
+(35%)
+16,467
+399.99*
+Radeon RX 5700 XT 50th Anniversary
+(35%)
+16,419
+NA
+GeForce RTX 3080 Laptop GPU
+(35%)
+16,417
+NA
+Radeon VII
+(35%)
+16,358
+1,899.95*
+Radeon RX 5700 XT
+(35%)
+16,338
+488.33*
+Tesla V100-SXM2-16GB
+(35%)
+16,235
+NA
+Radeon PRO W7600
+(35%)
+16,156
+NA
+GeForce RTX 2070
+(35%)
+16,105
+389.46*
+RTX A5000 Laptop GPU
+(35%)
+16,067
+NA
+Radeon 8050S
+(34%)
+15,976
+NA
+GeForce RTX 2060 12GB
+(34%)
+15,945
+NA
+Miracast display port driver V3
+(34%)
+15,910
+NA
+RTX 3000 Ada Generation Laptop GPU
+(34%)
+15,856
+NA
+Radeon RX 6800S
+(34%)
+15,817
+NA
+Intel Arc B580
+(34%)
+15,723
+249.00*
+Quadro RTX 5000
+(34%)
+15,681
+NA
+Radeon Pro V620 MxGPU
+(34%)
+15,633
+NA
+Radeon Pro Vega II
+(34%)
+15,597
+NA
+GeForce GTX 1080
+(34%)
+15,582
+442.79*
+RTX PRO 2000 Blackwell Generation Laptop GPU
+(33%)
+15,569
+NA
+Radeon Pro W6800X Duo
+(33%)
+15,557
+NA
+Quadro P6000
+(33%)
+15,436
+3,250.00*
+Radeon RX 7600S
+(33%)
+15,415
+NA
+Radeon RX 6600 LE
+(33%)
+15,387
+NA
+Radeon PRO W6600
+(33%)
+15,383
+NA
+GeForce RTX 3070 Laptop GPU
+(33%)
+15,357
+NA
+Radeon RX 7700S
+(33%)
+15,349
+NA
+RTX PRO 500 Blackwell Generation Laptop GPU
+(33%)
+15,342
+NA
+RTX 2000 Ada Generation Embedded GPU
+(33%)
+15,334
+NA
+GeForce RTX 3060 8GB
+(33%)
+15,264
+NA
+RTX 2000 Ada Generation Laptop GPU
+(33%)
+15,264
+NA
+Quadro RTX 4000
+(33%)
+15,179
+899.00*
+Radeon RX 6600
+(32%)
+15,093
+269.99
+Radeon RX 6700S
+(32%)
+15,036
+299.99*
+Radeon RX 6650M
+(32%)
+15,019
+NA
+GeForce RTX 2080 (Mobile)
+(32%)
+15,014
+NA
+Quadro GP100
+(32%)
+14,954
+NA
+RTX A4000 Laptop GPU
+(32%)
+14,920
+NA
+Quadro RTX 5000 (Mobile)
+(32%)
+14,832
+NA
+GeForce GTX 1070 Ti
+(32%)
+14,677
+569.99*
+RadeonT RX 6850M XT
+(31%)
+14,609
+NA
+Radeon Pro W5700
+(31%)
+14,570
+649.99*
+GeForce RTX 4050 Laptop GPU
+(31%)
+14,443
+NA
+Radeon RX 5700
+(31%)
+14,338
+309.99*
+RTX 2000E Ada Generation
+(30%)
+14,144
+NA
+RTX PRO 1000 Blackwell Generation Laptop GPU
+(30%)
+14,131
+NA
+GeForce RTX 2060
+(30%)
+14,116
+240.73
+Radeon RX Vega 64
+(30%)
+14,098
+749.99*
+Radeon Pro Vega II Duo
+(30%)
+14,018
+NA
+Radeon RX 6600M
+(30%)
+13,930
+360.51*
+NVIDIA A40
+(30%)
+13,900
+NA
+RTX A3000 12GB Laptop GPU
+(30%)
+13,750
+NA
+Intel Arc B570
+(29%)
+13,748
+NA
+GeForce GTX 980 Ti
+(29%)
+13,746
+644.61*
+RTX A2000 12GB
+(29%)
+13,728
+NA
+NVIDIA TITAN X
+(29%)
+13,660
+608.10*
+GeForce RTX 2070 Super with Max-Q Design
+(29%)
+13,607
+NA
+Radeon RX 6700M
+(29%)
+13,600
+269.99*
+RTX A2000
+(29%)
+13,581
+574.99*
+GeForce RTX 2080 Super with Max-Q Design
+(29%)
+13,576
+NA
+GeForce GTX 1070
+(29%)
+13,500
+475.00
+Radeon RX 5600 XT
+(29%)
+13,483
+545.00*
+L20
+(29%)
+13,430
+NA
+Radeon PRO W7500
+(29%)
+13,407
+NA
+RTX 1000 Ada Generation Laptop GPU
+(29%)
+13,396
+NA
+Radeon Pro Vega 64X
+(29%)
+13,369
+NA
+Radeon RX 6800M
+(28%)
+13,276
+NA
+GeForce RTX 3060 Laptop GPU
+(28%)
+13,240
+309.99*
+Radeon RX 7600M XT
+(28%)
+13,213
+NA
+Intel Arc A770
+(28%)
+13,184
+439.99*
+Radeon PRO V710 MxGPU
+(28%)
+13,130
+NA
+Radeon PRO W6600X
+(28%)
+13,113
+NA
+Radeon RX Vega 56
+(28%)
+13,083
+752.99*
+Radeon Pro WX 8200
+(28%)
+13,047
+1,599.39*
+Radeon Pro VII
+(28%)
+13,031
+NA
+Radeon Vega Frontier Edition
+(28%)
+13,013
+1,679.99*
+Quadro RTX 5000 with Max-Q Design
+(28%)
+12,998
+NA
+GeForce GTX 1660 Ti
+(28%)
+12,909
+435.00
+Radeon Pro Vega 64
+(28%)
+12,891
+NA
+GeForce RTX 2080 with Max-Q Design
+(28%)
+12,856
+2,099.99*
+GeForce GTX TITAN X
+(27%)
+12,763
+1,096.99*
+GeForce GTX 1660 SUPER
+(27%)
+12,709
+350.33
+RTX A3000 Laptop GPU
+(27%)
+12,649
+NA
+Quadro P5000
+(27%)
+12,638
+1,868.99*
+Radeon RX 5600 OEM
+(27%)
+12,610
+NA
+GeForce RTX 3050 8GB
+(27%)
+12,583
+239.99*
+Tesla T10
+(27%)
+12,558
+NA
+Radeon Pro 5700 XT
+(27%)
+12,558
+NA
+Intel Arc A750
+(27%)
+12,425
+199.99*
+GeForce RTX 2070 (Mobile)
+(26%)
+12,357
+NA
+Radeon Pro Vega 56
+(26%)
+12,354
+NA
+Tesla V100-PCIE-16GB
+(26%)
+12,328
+NA
+Quadro P5200 with Max-Q Design
+(26%)
+12,308
+NA
+Quadro RTX 4000 with Max-Q Design
+(26%)
+12,290
+NA
+Radeon Pro WX 9100
+(26%)
+12,285
+NA
+Radeon RX 6850M
+(26%)
+12,274
+NA
+Tesla P40
+(26%)
+12,267
+NA
+Radeon Pro V520 MxGPU
+(26%)
+12,258
+NA
+Intel Arc A770M
+(26%)
+11,983
+NA
+Quadro M6000 24GB
+(26%)
+11,925
+NA
+Intel Arc A580
+(26%)
+11,925
+179.99*
+GeForce RTX 3050 OEM
+(25%)
+11,848
+223.83*
+Quadro P5200
+(25%)
+11,841
+NA
+Tesla P100-PCIE-16GB
+(25%)
+11,814
+5,699.00*
+GeForce RTX 3050 A Laptop GPU
+(25%)
+11,781
+NA
+Quadro M6000
+(25%)
+11,752
+4,933.21*
+Radeon RX 5600
+(25%)
+11,725
+NA
+Radeon RX 6600S
+(25%)
+11,716
+NA
+Quadro P4200 with Max-Q Design
+(25%)
+11,703
+NA
+L40-8Q
+(25%)
+11,670
+NA
+GeForce GTX 1660
+(25%)
+11,658
+339.90*
+Quadro RTX 4000 (Mobile)
+(25%)
+11,648
+NA
+Radeon Pro 5700
+(25%)
+11,583
+NA
+Radeon RX 7600M
+(25%)
+11,582
+NA
+Quadro P4000
+(25%)
+11,528
+556.19*
+GeForce RTX 2070 with Max-Q Design
+(25%)
+11,524
+NA
+Radeon 610M Ryzen 9 7845HX
+(25%)
+11,464
+NA
+RTX A1000 Embedded GPU
+(25%)
+11,461
+NA
+GeForce GTX 1080 with Max-Q Design
+(24%)
+11,422
+NA
+GeForce RTX 2060 (Mobile)
+(24%)
+11,353
+NA
+Radeon Pro Vega 48
+(24%)
+11,289
+NA
+Radeon PRO W6600M
+(24%)
+11,287
+NA
+GeForce GTX 980
+(24%)
+11,112
+247.35*
+Radeon Pro SSG
+(23%)
+10,972
+2,410.15*
+RTX 500 Ada Generation Laptop GPU
+(23%)
+10,928
+NA
+Quadro RTX 3000
+(23%)
+10,922
+NA
+RTX A2000 Embedded GPU
+(23%)
+10,860
+NA
+GeForce RTX 3050 6GB
+(23%)
+10,731
+199.99
+RTX A2000 8GB Laptop GPU
+(23%)
+10,672
+NA
+Tesla T4
+(23%)
+10,647
+4,466.65*
+Tesla M40 24GB
+(23%)
+10,641
+NA
+RTX A1000
+(23%)
+10,605
+NA
+Quadro P4200
+(22%)
+10,538
+NA
+GeForce GTX 1070 (Mobile)
+(22%)
+10,465
+NA
+SuperDisplay Virtual Adapter
+(22%)
+10,390
+NA
+GeForce RTX 3050 6GB Laptop GPU
+(22%)
+10,270
+NA
+Tesla M40
+(22%)
+10,220
+600.00*
+GeForce GTX 1650 SUPER
+(22%)
+10,185
+239.99*
+GeForce GTX 1660 Ti (Mobile)
+(22%)
+10,142
+NA
+GeForce RTX 3050 Ti Laptop GPU
+(22%)
+10,122
+NA
+GeForce GTX 1060
+(21%)
+10,079
+329.80*
+RTX A1000 6GB Laptop GPU
+(21%)
+10,076
+NA
+GeForce GTX 1070 with Max-Q Design
+(21%)
+9,848
+NA
+GRID P40-2B
+(21%)
+9,842
+NA
+Intel Arc A730M
+(21%)
+9,808
+NA
+GeForce GTX 1060 3GB
+(21%)
+9,799
+235.47*
+Radeon RX 6550M
+(21%)
+9,765
+NA
+GeForce RTX 2060 with Max-Q Design
+(21%)
+9,744
+NA
+Radeon R9 Fury + Fury X
+(21%)
+9,741
+449.99*
+RTX A2000 Laptop GPU
+(21%)
+9,710
+NA
+GeForce GTX 970
+(21%)
+9,643
+237.99*
+Radeon RX 6500 XT
+(20%)
+9,606
+179.99
+RTX A1000 Laptop GPU
+(20%)
+9,576
+NA
+Radeon RX Vega Ryzen 5 5600GT
+(20%)
+9,558
+NA
+Radeon R9 Fury
+(20%)
+9,546
+443.10*
+6FDF:FF
+(20%)
+9,529
+NA
+A10-12Q
+(20%)
+9,493
+NA
+GeForce RTX 3050 4GB Laptop GPU
+(20%)
+9,465
+269.99*
+Ryzen 9 4900HSS with Radeon Graphics
+(20%)
+9,461
+NA
+GeForce GTX 780 Ti
+(20%)
+9,459
+339.99*
+Radeon R9 Fury X
+(20%)
+9,452
+NA
+Quadro M5000
+(20%)
+9,439
+499.00*
+Radeon RX 590
+(20%)
+9,373
+549.99*
+Quadro P2200
+(20%)
+9,363
+459.80*
+Radeon R9 390X
+(20%)
+9,363
+NA
+Radeon Pro 5600M
+(20%)
+9,279
+NA
+Intel Arc Pro A60
+(20%)
+9,195
+NA
+GeForce GTX TITAN Black
+(20%)
+9,184
+1,399.99
+CMP 40HX
+(19%)
+9,137
+NA
+Inspiration CG620 MxGPU
+(19%)
+9,106
+NA
+Tesla P4
+(19%)
+9,097
+NA
+Radeon RX 5500 XT
+(19%)
+9,095
+181.29*
+GeForce GTX 1060 5GB
+(19%)
+9,088
+487.99*
+Quadro P4000 with Max-Q Design
+(19%)
+9,083
+NA
+Quadro P3200 with Max-Q Design
+(19%)
+9,014
+NA
+Radeon Pro W5500
+(19%)
+8,979
+409.99*
+GeForce GTX TITAN Z
+(19%)
+8,905
+1,515.00*
+Radeon R9 390
+(19%)
+8,874
+NA
+Radeon RX 5600M
+(19%)
+8,861
+NA
+Radeon RX 580
+(19%)
+8,824
+159.99*
+Radeon RX 5500
+(19%)
+8,786
+NA
+GRID P40-24Q
+(19%)
+8,719
+NA
+Radeon R9 295X2
+(18%)
+8,681
+499.10*
+Quadro P3200
+(18%)
+8,648
+389.30*
+GeForce GTX 1660 Ti with Max-Q Design
+(18%)
+8,592
+NA
+Radeon RX 480
+(18%)
+8,570
+339.99*
+Radeon R9 290X
+(18%)
+8,523
+NA
+EIZO Quadro MED-XN71
+(18%)
+8,518
+NA
+GRID RTX6000-1B
+(18%)
+8,473
+NA
+Radeon RX590 GME
+(18%)
+8,450
+NA
+Radeon 890M
+(18%)
+8,412
+NA
+Radeon R9 290X / 390X
+(18%)
+8,380
+319.99*
+Ryzen 5 4600HS with Radeon Graphics
+(18%)
+8,371
+NA
+RTX A4500 Embedded GPU
+(18%)
+8,309
+NA
+Radeon Pro Duo
+(18%)
+8,299
+3,970.36*
+Tesla V100-PCIE-32GB
+(18%)
+8,260
+NA
+Quadro RTX 3000 with Max-Q Design
+(17%)
+8,230
+NA
+Radeon R9 290
+(17%)
+8,210
+NA
+GeForce GTX Titan
+(17%)
+8,196
+745.00*
+GRID P40-2B4
+(17%)
+8,160
+NA
+GeForce GTX 1060 (Mobile)
+(17%)
+8,160
+NA
+Radeon R9 290 / 390
+(17%)
+8,150
+380.00*
+Radeon PRO W6400
+(17%)
+8,126
+NA
+EIZO Quadro MED-XN72
+(17%)
+8,101
+NA
+Quadro K6000
+(17%)
+8,096
+210.66*
+GRID P40-12Q
+(17%)
+8,053
+NA
+Ryzen 9 6900HS
+(17%)
+8,005
+NA
+GeForce GTX 780
+(17%)
+7,995
+279.99*
+Radeon RX 470/570
+(17%)
+7,962
+388.99*
+Radeon Pro 5500 XT
+(17%)
+7,941
+NA
+Quadro M5500
+(17%)
+7,915
+NA
+GeForce GTX 1650
+(17%)
+7,878
+142.47
+GeForce GTX 1060 with Max-Q Design
+(17%)
+7,859
+NA
+Radeon Pro WX 7100
+(17%)
+7,795
+1,047.99*
+T1200 Laptop GPU
+(16%)
+7,776
+NA
+Radeon Pro 580
+(16%)
+7,753
+NA
+GeForce RTX 2050
+(16%)
+7,751
+NA
+FirePro W9100
+(16%)
+7,748
+1,729.99*
+Radeon 880M
+(16%)
+7,724
+NA
+Radeon RX 580 2048SP
+(16%)
+7,666
+NA
+Radeon RX 6400
+(16%)
+7,664
+212.47*
+Radeon RX 780
+(16%)
+7,658
+NA
+Tesla M60
+(16%)
+7,652
+787.90*
+T1000 8GB
+(16%)
+7,640
+NA
+T1000
+(16%)
+7,629
+303.99*
+Intel Arc A530M
+(16%)
+7,624
+NA
+Radeon RX 5300
+(16%)
+7,588
+NA
+L4
+(16%)
+7,582
+NA
+GeForce GTX 1650 Ti
+(16%)
+7,541
+NA
+Radeon Pro 580X
+(16%)
+7,540
+NA
+Radeon RX 580X
+(16%)
+7,537
+NA
+Radeon RX 6500M
+(16%)
+7,533
+NA
+Radeon RX 6500
+(16%)
+7,502
+NA
+GRID P40-8Q
+(16%)
+7,432
+NA
+GeForce GTX 980M
+(16%)
+7,352
+289.99*
+Radeon Pro W5500X
+(16%)
+7,351
+NA
+Quadro T2000
+(15%)
+7,227
+528.35*
+Meta Virtual Monitor
+(15%)
+7,142
+NA
+Radeon Pro 5300
+(15%)
+7,125
+NA
+RadeonT 780M
+(15%)
+7,096
+NA
+T600 Laptop GPU
+(15%)
+7,078
+NA
+Quadro M5000M
+(15%)
+7,032
+546.92*
+Ryzen 9 4900HS with Radeon Graphics
+(15%)
+7,022
+NA
+Ryzen 7 4800HS with Radeon Graphics
+(15%)
+6,999
+NA
+Radeon 780M
+(15%)
+6,984
+NA
+GeForce GTX 1650 (Mobile)
+(15%)
+6,968
+NA
+Quadro P2000
+(15%)
+6,949
+439.60*
+Intel Arc 140T GPU
+(14%)
+6,871
+NA
+Quadro T2000 with Max-Q Design
+(14%)
+6,835
+NA
+CMP 30HX
+(14%)
+6,807
+NA
+Quadro T1000 with Max-Q Design
+(14%)
+6,766
+NA
+Radeon Pro 5500M
+(14%)
+6,728
+NA
+Intel Arc Pro 140T GPU
+(14%)
+6,721
+NA
+GeForce GTX 970XM FORCE
+(14%)
+6,707
+NA
+RTX A500 Laptop GPU
+(14%)
+6,692
+NA
+Quadro M4000
+(14%)
+6,687
+362.00*
+Radeon R9 285
+(14%)
+6,680
+NA
+FirePro W8100
+(14%)
+6,672
+704.00*
+P106-100
+(14%)
+6,647
+NA
+Radeon Ryzen 9 6900HS
+(14%)
+6,603
+NA
+Radeon RX Vega M GH
+(14%)
+6,586
+NA
+Radeon Pro WX 7130
+(14%)
+6,553
+NA
+AMD Ryzen Z1 Extreme
+(14%)
+6,522
+NA
+A10-8Q
+(14%)
+6,502
+NA
+GeForce GTX 1650 Ti with Max-Q Design
+(14%)
+6,496
+NA
+Quadro T1000
+(14%)
+6,493
+369.99*
+T600
+(14%)
+6,471
+239.99*
+Intel Arc A380E
+(14%)
+6,438
+NA
+Quadro P3000
+(14%)
+6,426
+NA
+Radeon RX 6300M
+(14%)
+6,421
+NA
+Intel Arc 130T GPU
+(13%)
+6,416
+NA
+GeForce GTX 1050 Ti
+(13%)
+6,339
+413.98
+Radeon Pro 570
+(13%)
+6,337
+NA
+Intel Arc A380
+(13%)
+6,259
+159.50
+Ryzen 7 6800HS with Radeon Graphics
+(13%)
+6,240
+NA
+GRID P4-4Q
+(13%)
+6,235
+NA
+Tesla M6
+(13%)
+6,226
+199.00*
+GeForce GTX 1650 with Max-Q Design
+(13%)
+6,222
+NA
+GeForce MX570 A
+(13%)
+6,191
+NA
+Ryzen 9 PRO 6950H with Radeon Graphics
+(13%)
+6,176
+NA
+Radeon R9 380X
+(13%)
+6,165
+349.99*
+FirePro W9000
+(13%)
+6,157
+845.00*
+Quadro M4000M
+(13%)
+6,145
+254.91*
+Quadro K5200
+(13%)
+6,134
+415.00*
+Radeon R9 280X
+(13%)
+6,124
+NA
+GeForce GTX 960
+(13%)
+6,115
+172.00*
+Ryzen 9 6900HS with Radeon Graphics
+(13%)
+6,110
+NA
+Parsec Virtual Display Adapter
+(13%)
+6,090
+NA
+Radeon R9 380
+(13%)
+6,066
+89.99*
+Radeon Ryzen 7 6800HS
+(13%)
+6,025
+NA
+GRID P100-16Q
+(12%)
+5,945
+NA
+GeForce GTX 770
+(12%)
+5,941
+249.00*
+Radeon Ryzen 7 6810U
+(12%)
+5,937
+NA
+Radeon Pro 5300M
+(12%)
+5,926
+NA
+GeForce GTX 1050 Ti (Mobile)
+(12%)
+5,918
+NA
+RTX A400
+(12%)
+5,883
+NA
+Intel Arc Pro A30M
+(12%)
+5,862
+NA
+RadeonT 760M
+(12%)
+5,846
+NA
+A40-3Q
+(12%)
+5,842
+NA
+Radeon Ryzen 7 7736U
+(12%)
+5,819
+NA
+Matrox LUMA A380P
+(12%)
+5,811
+NA
+Radeon RX 5500M
+(12%)
+5,798
+NA
+GeForce MX570
+(12%)
+5,796
+NA
+Ryzen 7 PRO 6850H with Radeon Graphics
+(12%)
+5,791
+NA
+Radeon Ryzen 9 PRO 6950H
+(12%)
+5,769
+NA
+Ryzen 9 PRO 6950H
+(12%)
+5,759
+NA
+Intel Arc Pro
+(12%)
+5,706
+NA
+GeForce GTX 970M
+(12%)
+5,692
+209.99*
+Eng Sample: 100-000000560-40_Y
+(12%)
+5,656
+NA
+Radeon TM
+(12%)
+5,636
+NA
+Intel Arc 140T
+(12%)
+5,635
+NA
+RadeonT 680M Ryzen 7 7735HS
+(12%)
+5,627
+NA
+Radeon 680M Ryzen 9 6900HX
+(12%)
+5,614
+NA
+Radeon 760M
+(12%)
+5,601
+NA
+GeForce GTX 680
+(12%)
+5,597
+399.00*
+Radeon PRO Ryzen 7 PRO 6850U
+(12%)
+5,582
+NA
+Ryzen 7 PRO 6850U
+(12%)
+5,581
+NA
+Quadro M3000M
+(12%)
+5,571
+159.95*
+Radeon HD 7990
+(12%)
+5,566
+399.99*
+GRID T4-8Q
+(12%)
+5,566
+NA
+Radeon PRO W6300
+(12%)
+5,560
+NA
+Radeon R9 285 / 380
+(12%)
+5,550
+485.00*
+Radeon R9 280
+(12%)
+5,545
+NA
+GRID M60-8A
+(12%)
+5,523
+NA
+Intel Arc
+(12%)
+5,500
+350.19*
+Radeon Pro WX 5100
+(11%)
+5,493
+359.99*
+GeForce GTX 690
+(11%)
+5,485
+280.99*
+Ryzen 9 5900HS with Radeon Graphics
+(11%)
+5,479
+NA
+L2
+(11%)
+5,467
+NA
+Ryzen 7 6800HS Creator Edition
+(11%)
+5,465
+NA
+Intel Arc A310
+(11%)
+5,437
+129.99
+GeForce GTX 760 Ti OEM
+(11%)
+5,427
+NA
+Radeon Ryzen 7 PRO 6850H
+(11%)
+5,378
+NA
+GRID P4-8Q
+(11%)
+5,356
+NA
+Radeon Ryzen 7 6800HS Creator Edition
+(11%)
+5,348
+NA
+GeForce GTX 950
+(11%)
+5,344
+141.99*
+GeForce GTX 670
+(11%)
+5,343
+193.98*
+Radeon Ryzen 7 7735H
+(11%)
+5,334
+NA
+GeForce GTX 760 Ti
+(11%)
+5,317
+297.50*
+GeForce GTX 1050 Ti with Max-Q Design
+(11%)
+5,307
+NA
+RTX A500 Embedded GPU
+(11%)
+5,292
+NA
+A16
+(11%)
+5,281
+NA
+Quadro P2000 with Max-Q Design
+(11%)
+5,264
+NA
+Radeon RX 6300
+(11%)
+5,249
+NA
+Radeon HD 7970 / R9 280X
+(11%)
+5,248
+246.99*
+Ryzen 7 6800H
+(11%)
+5,248
+NA
+Ryzen 7 6800HS
+(11%)
+5,237
+NA
+Intel Arc 140V GPU
+(11%)
+5,230
+NA
+Intel Arc Pro A40/A50
+(11%)
+5,222
+NA
+Radeon HD 8990
+(11%)
+5,214
+NA
+Radeon Ryzen Z2 Go
+(11%)
+5,206
+NA
+GRID M60-2Q
+(11%)
+5,203
+NA
+FirePro W7100
+(11%)
+5,191
+389.30*
+Ryzen 9 6900HX with Radeon Graphics
+(11%)
+5,180
+NA
+Ryzen 7 7735HS with Radeon Graphics
+(11%)
+5,175
+NA
+GRID RTX8000P-4Q
+(11%)
+5,174
+NA
+Q12U-1
+(11%)
+5,164
+NA
+Radeon Ryzen 9 6900HS Creator Edition
+(11%)
+5,156
+NA
+Radeon R9 M295X
+(11%)
+5,150
+1,449.00*
+GRID P40-4Q
+(11%)
+5,145
+NA
+Ryzen 7 Pro 7735U with Radeon Graphics
+(11%)
+5,142
+NA
+GeForce GTX 1050 3GB
+(11%)
+5,119
+NA
+Ryzen 7 PRO 6850U with Radeon Graphics
+(11%)
+5,116
+NA
+Intel Arc A370M
+(11%)
+5,115
+NA
+Radeon Ryzen 7 PRO 6850U
+(11%)
+5,107
+NA
+Ryzen 7 7735U with Radeon Graphics
+(11%)
+5,081
+NA
+Ryzen 7 PRO 6860Z
+(11%)
+5,077
+NA
+FirePro S9000
+(11%)
+5,059
+NA
+Radeon Ryzen 7 PRO 6850HS
+(11%)
+5,057
+NA
+Radeon Ryzen 7 7735HS
+(11%)
+5,056
+NA
+EIZO MED-XN44
+(11%)
+5,049
+NA
+Radeon Pro Vega 20
+(10%)
+5,040
+NA
+GeForce GTX 1050
+(10%)
+5,031
+239.00*
+Radeon Ryzen 7 6800H
+(10%)
+5,021
+NA
+Ryzen 7 6800U
+(10%)
+5,006
+NA
+GeForce GTX 1630
+(10%)
+4,977
+189.99*
+Radeon R9 M395X
+(10%)
+4,974
+NA
+Ryzen 7 6800H with Radeon Graphics
+(10%)
+4,960
+NA
+EIZO Quadro MED-XN51LP
+(10%)
+4,951
+NA
+Barco MXRT 7600
+(10%)
+4,944
+602.59*
+L4-4Q
+(10%)
+4,927
+NA
+Radeon R9 M395
+(10%)
+4,916
+NA
+RTXA5000-8Q
+(10%)
+4,916
+NA
+GRID T4-16Q
+(10%)
+4,910
+NA
+GRID P40-1A
+(10%)
+4,909
+NA
+FirePro S9050
+(10%)
+4,901
+NA
+Radeon R9 270X
+(10%)
+4,870
+326.50*
+Ryzen 7 PRO 6860Z with Radeon Graphics
+(10%)
+4,869
+NA
+Radeon Pro WX Vega M GL
+(10%)
+4,810
+NA
+Radeon Pro Vega 16
+(10%)
+4,809
+NA
+GeForce GTX 760
+(10%)
+4,804
+149.00*
+RTXA5000-24Q
+(10%)
+4,803
+NA
+Intel Arc A310 LP
+(10%)
+4,795
+NA
+T550 Laptop GPU
+(10%)
+4,786
+NA
+GRID RTX6000P-6Q
+(10%)
+4,777
+NA
+FirePro S10000
+(10%)
+4,768
+NA
+L4-24Q
+(10%)
+4,767
+NA
+Radeon HD 7950 / R9 280
+(10%)
+4,765
+240.83*
+Ryzen 7 6800U with Radeon Graphics
+(10%)
+4,760
+NA
+A16-2Q
+(10%)
+4,747
+NA
+Radeon 860M
+(10%)
+4,740
+NA
+Radeon Ryzen 7 7735U
+(10%)
+4,740
+NA
+Radeon RX 5300M
+(10%)
+4,724
+NA
+Radeon R9 370
+(10%)
+4,722
+159.99*
+L40-6Q
+(10%)
+4,718
+NA
+Radeon Sky 500
+(10%)
+4,709
+NA
+Ryzen 9 PRO 6950HS with Radeon Graphics
+(10%)
+4,705
+NA
+NVIDIA A40-8Q
+(10%)
+4,682
+NA
+Tesla K80
+(10%)
+4,680
+593.95*
+GRID V100D-2Q
+(10%)
+4,668
+NA
+L40S-24Q
+(10%)
+4,660
+NA
+GeForce GTX 580
+(10%)
+4,631
+488.59*
+Intel Arc 130V GPU
+(10%)
+4,630
+NA
+Radeon HD 7870
+(10%)
+4,603
+176.00*
+Radeon 680M Ryzen 7 7735HS
+(10%)
+4,596
+NA
+Radeon Ryzen 7 6800U
+(9%)
+4,564
+NA
+Red Hat VirtIO GPU DOD controller
+(9%)
+4,561
+NA
+Radeon Ryzen 7 PRO 6860Z
+(9%)
+4,558
+NA
+B8DKMDAP
+(9%)
+4,557
+NA
+GeForce MX550
+(9%)
+4,542
+NA
+Radeon Pro 465
+(9%)
+4,538
+NA
+FirePro S7000
+(9%)
+4,524
+246.54*
+GRID RTX6000-8Q
+(9%)
+4,514
+NA
+NVIDIA A40-4Q
+(9%)
+4,505
+NA
+Quadro P1000
+(9%)
+4,503
+289.99*
+L40S-12Q
+(9%)
+4,500
+NA
+Tesla K40c
+(9%)
+4,495
+NA
+Radeon R7 370
+(9%)
+4,494
+NA
+L4-6Q
+(9%)
+4,473
+NA
+Radeon HD 7870 XT
+(9%)
+4,470
+NA
+GeForce GTX 1050 (Mobile)
+(9%)
+4,463
+NA
+Radeon 660M Ryzen 5 6600H
+(9%)
+4,461
+NA
+GRID M60-1B
+(9%)
+4,457
+NA
+A16-16Q
+(9%)
+4,451
+NA
+Tesla K20m
+(9%)
+4,432
+NA
+GRID P6-4Q
+(9%)
+4,429
+NA
+Radeon Ryzen 9 PRO 6950HS
+(9%)
+4,427
+NA
+GeForce GTX 660 Ti
+(9%)
+4,409
+144.00*
+Tesla K20Xm
+(9%)
+4,403
+7,699.00*
+Radeon Instinct MI25 MxGPU
+(9%)
+4,403
+NA
+FirePro W7000 Adapter
+(9%)
+4,359
+NA
+Quadro K4200
+(9%)
+4,341
+249.00*
+GRID GTX P40-6
+(9%)
+4,340
+NA
+NVIDIA A40-12Q
+(9%)
+4,336
+NA
+A16-4Q
+(9%)
+4,327
+NA
+Radeon R9 270
+(9%)
+4,306
+NA
+GRID RTX6000P-4Q
+(9%)
+4,283
+NA
+Quadro M2200
+(9%)
+4,277
+249.99*
+Radeon R9 270 / R7 370
+(9%)
+4,260
+213.16*
+RadeonT 660M Ryzen 5 6600H
+(9%)
+4,257
+NA
+FirePro W7000
+(9%)
+4,255
+278.05*
+RTXA6000-8Q
+(9%)
+4,237
+NA
+FirePro W8000
+(9%)
+4,232
+573.00*
+Eng Sample: 100-000000561-40_Y
+(9%)
+4,206
+NA
+GRID RTX8000P-12A
+(9%)
+4,166
+NA
+GRID V100D-8Q
+(9%)
+4,156
+NA
+GRID P40-2Q
+(9%)
+4,130
+NA
+Winsta0\\Default
+(9%)
+4,125
+NA
+GeForce GTX 480
+(8%)
+4,121
+169.99*
+Radeon RX 460
+(8%)
+4,093
+166.81*
+Ryzen 7 PRO 6850HS with Radeon Graphics
+(8%)
+4,087
+NA
+Radeon PRO Ryzen 5 PRO 6650U
+(8%)
+4,067
+NA
+L4-2Q
+(8%)
+4,062
+NA
+RadeonT 660M Ryzen 5 7535HS
+(8%)
+4,051
+NA
+Radeon HD 7800-serie
+(8%)
+4,029
+NA
+GeForce GTX 660
+(8%)
+4,023
+167.95*
+GeForce GTX 1050 with Max-Q Design
+(8%)
+4,019
+NA
+Quadro M2000
+(8%)
+4,008
+264.24*
+Radeon 840M
+(8%)
+3,992
+NA
+Quadro K5000
+(8%)
+3,976
+249.00*
+GRID RTX8000-4Q
+(8%)
+3,961
+NA
+GRID P6-2Q
+(8%)
+3,926
+NA
+GeForce GTX 570
+(8%)
+3,923
+149.99*
+Radeon Ryzen 7 Pro 7735U
+(8%)
+3,910
+NA
+GeForce GTX 750 Ti
+(8%)
+3,899
+88.11*
+Radeon HD 7850
+(8%)
+3,888
+174.99
+GRID M60-8Q
+(8%)
+3,884
+NA
+Radeon HD 8970M
+(8%)
+3,876
+139.99*
+Matrox LUMA A310F
+(8%)
+3,873
+NA
+L40S-48Q
+(8%)
+3,869
+NA
+Radeon RX Vega M GL
+(8%)
+3,868
+NA
+Radeon R9 M390X
+(8%)
+3,851
+NA
+GRID RTX8000P-2Q
+(8%)
+3,843
+NA
+EIZO MED-XN43
+(8%)
+3,843
+NA
+GRID M60-4Q
+(8%)
+3,831
+NA
+GeForce GTX 965M
+(8%)
+3,824
+NA
+GeForce GTX 880M
+(8%)
+3,818
+NA
+GRID V100-2Q
+(8%)
+3,811
+NA
+GeForce GTX 780M
+(8%)
+3,807
+499.00*
+T400 4GB
+(8%)
+3,801
+NA
+FirePro S7150
+(8%)
+3,770
+1,697.99*
+Radeon Ryzen 5 6600HS Creator Edition
+(8%)
+3,768
+NA
+GRID T4-2Q
+(8%)
+3,765
+NA
+Barco MXRT 7500
+(8%)
+3,753
+299.00*
+Ryzen 5 Pro 7535U with Radeon Graphics
+(8%)
+3,750
+NA
+GeForce MX450
+(8%)
+3,745
+NA
+Ryzen 5 PRO 6650H with Radeon Graphics
+(8%)
+3,727
+NA
+GRID M60-1Q
+(8%)
+3,695
+NA
+Ryzen 5 6600HS Creator Edition
+(8%)
+3,691
+NA
+Matrox LUMA A310
+(8%)
+3,690
+NA
+GeForce GTX 775M
+(8%)
+3,688
+NA
+GeForce GTX 680MX
+(8%)
+3,686
+NA
+Radeon Pro WX 4100
+(8%)
+3,685
+499.99*
+Ryzen 5 7535HS with Radeon Graphics
+(8%)
+3,680
+NA
+Radeon Pro 560X
+(8%)
+3,678
+NA
+Quadro P620
+(7%)
+3,665
+574.55*
+Radeon R9 M485X
+(7%)
+3,661
+NA
+Radeon RX 560
+(7%)
+3,660
+203.32
+Radeon Ryzen 5 PRO 6650U
+(7%)
+3,659
+NA
+T500
+(7%)
+3,644
+NA
+GRID T4-4Q
+(7%)
+3,608
+NA
+T400
+(7%)
+3,603
+169.99*
+P104-100
+(7%)
+3,602
+299.99*
+Ryzen 5 6600H with Radeon Graphics
+(7%)
+3,580
+NA
+Quadro K2200
+(7%)
+3,576
+268.30*
+GRID RTX8000-2Q
+(7%)
+3,574
+NA
+GeForce GTX 680M KY_Bullet Edition
+(7%)
+3,569
+NA
+Radeon HD 7970M
+(7%)
+3,569
+NA
+GRID M6-8Q
+(7%)
+3,568
+NA
+VMware Horizon Indirect Display Driver
+(7%)
+3,565
+NA
+Microsoft Basic Display Adapter Ryzen 5 3550H
+(7%)
+3,537
+NA
+Ryzen 5 PRO 6650U with Radeon Graphics
+(7%)
+3,534
+NA
+Radeon Ryzen 5 7533HS
+(7%)
+3,523
+NA
+Ryzen 5 PRO 6650U
+(7%)
+3,519
+NA
+GRID K520
+(7%)
+3,516
+149.99*
+Quadro 7000
+(7%)
+3,505
+NA
+Quadro K2200M
+(7%)
+3,501
+124.95*
+GeForce GTX 870M
+(7%)
+3,496
+NA
+Radeon Ryzen 5 6600H
+(7%)
+3,477
+NA
+Radeon Pro 560
+(7%)
+3,475
+NA
+Radeon Pro W5500M
+(7%)
+3,470
+NA
+GeForce GTX 960A
+(7%)
+3,465
+NA
+Radeon Pro 460
+(7%)
+3,453
+NA
+Quadro M2000M
+(7%)
+3,445
+213.16*
+Tesla C2050 / C2070
+(7%)
+3,428
+NA
+GeForce GTX 650 Ti BOOST
+(7%)
+3,390
+NA
+Radeon HD8970M
+(7%)
+3,369
+NA
+Radeon E8870PCIe
+(7%)
+3,368
+NA
+GeForce GTX 960M
+(7%)
+3,363
+1,169.00*
+Radeon 660M
+(7%)
+3,342
+NA
+GeForce GTX 590
+(7%)
+3,341
+435.00*
+GeForce GTX 750
+(7%)
+3,334
+135.29*
+Radeon 680M
+(7%)
+3,334
+NA
+Ryzen 5 7535U with Radeon Graphics
+(7%)
+3,324
+NA
+Quadro P600
+(7%)
+3,322
+210.58*
+A40-24Q
+(7%)
+3,318
+NA
+Radeon Ryzen 9 7950X 16-Core
+(7%)
+3,314
+NA
+Radeon Ryzen 7 4800H
+(7%)
+3,309
+NA
+GRID P4-2A
+(7%)
+3,307
+NA
+GRID T4-1Q
+(7%)
+3,303
+NA
+Radeon Ryzen 5 6600U
+(7%)
+3,294
+NA
+GeForce GTX 680M
+(7%)
+3,278
+135.99*
+A16-1Q
+(7%)
+3,276
+NA
+GRID P100-8Q
+(7%)
+3,267
+NA
+Custom GPU 0932
+(7%)
+3,250
+NA
+GeForce 770M
+(7%)
+3,246
+176.99*
+Snapdragon X Elite - X1E001DE - Qualcomm Adreno GP
+(7%)
+3,246
+NA
+Radeon R9 M470X
+(7%)
+3,244
+NA
+GRID P4-4A
+(7%)
+3,240
+NA
+Ryzen 5 6600U with Radeon Graphics
+(7%)
+3,233
+NA
+Radeon R9 M290X
+(7%)
+3,218
+NA
+Quadro M1200
+(7%)
+3,211
+NA
+Radeon 740M
+(7%)
+3,210
+NA
+Quadro K5100M
+(7%)
+3,209
+1,108.84*
+Radeon Ryzen 7 4800HS
+(7%)
+3,208
+NA
+GRID P4-8A
+(6%)
+3,206
+NA
+Radeon R7 260X
+(6%)
+3,190
+139.99*
+Tesla C2050
+(6%)
+3,176
+269.99*
+Radeon Ryzen 5 7535U
+(6%)
+3,175
+NA
+Radeon RX 560X
+(6%)
+3,168
+NA
+Intel Graphics
+(6%)
+3,163
+NA
+FirePro V7000
+(6%)
+3,162
+NA
+FirePro W7170M
+(6%)
+3,162
+NA
+Tesla K40m
+(6%)
+3,143
+NA
+Radeon Pro 555
+(6%)
+3,141
+1,049.00*
+Radeon R7 360
+(6%)
+3,137
+145.99*
+GeForce GTX 470
+(6%)
+3,134
+59.99*
+Tesla C2070
+(6%)
+3,121
+604.00*
+Radeon Pro 455
+(6%)
+3,113
+449.00*
+Radeon Ryzen 5 7535HS
+(6%)
+3,097
+NA
+Matrox LUMA A310FP
+(6%)
+3,093
+NA
+Radeon HD 7790
+(6%)
+3,090
+139.99*
+GeForce GTX 860M
+(6%)
+3,078
+114.00*
+GeForce GTX 560 Ti
+(6%)
+3,066
+129.99*
+L4-2A
+(6%)
+3,063
+NA
+Radeon R9 260
+(6%)
+3,048
+NA
+Tesla M10
+(6%)
+3,046
+2,695.00*
+EIZO MED-X5000
+(6%)
+3,038
+NA
+Radeon R9 360
+(6%)
+3,032
+133.89*
+Tesla C2075
+(6%)
+3,017
+646.00*
+Radeon HD 6990
+(6%)
+3,014
+498.49*
+Radeon Ryzen 5 Pro 7535U
+(6%)
+3,013
+NA
+Snapdragon X Elite - X1E84100 - Qualcomm Adreno GP
+(6%)
+2,981
+NA
