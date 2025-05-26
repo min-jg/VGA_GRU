@@ -80,6 +80,9 @@ def add_rolling_features(df):
     scaler = {}
 
     for sid, group in df.groupby('series_id'):
+        # 정규화 확인 코드
+        print(f"[series_id={sid}] 가격 범위: {group['avg_price'].min():,.0f} ~ {group['avg_price'].max():,.0f}")
+
         scaler_price = MinMaxScaler()
         scaler_mean = MinMaxScaler()
         scaler_std = MinMaxScaler()

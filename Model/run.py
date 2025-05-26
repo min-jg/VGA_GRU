@@ -55,6 +55,8 @@ class PricePredictorApp:
         if len(df_gpu) <= self.seq_len:
             self.result_label.config(text="데이터가 부족하여 예측할 수 없습니다.")
             return
+        # 정규화 확인 코드
+        print(f"[{gpu_name}] 실제 가격 범위: {df_gpu['avg_price'].min():,.0f} ~ {df_gpu['avg_price'].max():,.0f}")
 
         # 모델 없으면 학습
         if not os.path.exists("Model/gru_model.h5"):
