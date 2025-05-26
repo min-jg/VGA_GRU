@@ -79,9 +79,11 @@ def add_rolling_features(df):
 
     scaler = {}
 
-    for sid, group in df.groupby('series_id'):
+    for sid, group in df.groupby('series_id'):  # A. series scale
+    # for name, group in df.groupby('name'):  # B. name scale
         # 정규화 확인 코드
         print(f"[series_id={sid}] 가격 범위: {group['avg_price'].min():,.0f} ~ {group['avg_price'].max():,.0f}")
+        # print(f"[name={name}] 가격 범위: {group['avg_price'].min():,.0f} ~ {group['avg_price'].max():,.0f}")
 
         scaler_price = MinMaxScaler()
         scaler_mean = MinMaxScaler()
@@ -93,7 +95,8 @@ def add_rolling_features(df):
         df.loc[group.index, 'mean_scaled_30'] = scaler_mean.fit_transform(group[['rolling_mean_30']])
         df.loc[group.index, 'std_scaled_30'] = scaler_std.fit_transform(group[['rolling_std_30']])
 
-        scaler[sid] = {
+        scaler[sid] = { # A. series scale
+        # scaler[name] = { # B. name scale
             'price': scaler_price, 'mean_7': scaler_mean, 'std_7': scaler_std,
             'mean_30': scaler_mean, 'std_30': scaler_std
         }
@@ -127,6 +130,7 @@ def create_sequences(df_group, seq_len):
         X_mean_30.append(mean_30[i:i+seq_len])
         X_std_30.append(std_30[i:i+seq_len])
         y.append(price[i + seq_len])                        # A. 가격 예측 로직 수정
+
         # delta = price[i + seq_len] - price[i + seq_len - 1] # B. 가격 변화량 기반 예측
         # y.append(delta)
 

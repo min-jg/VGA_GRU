@@ -75,8 +75,10 @@ class PricePredictorApp:
         current_date = df_gpu['date'].min() + pd.Timedelta(days=self.seq_len)
 
         # 역정규화용 스케일러
-        series_id = df_gpu['series_id'].iloc[0]
+        series_id = df_gpu['series_id'].iloc[0]             # A. series scale
         scaler_price = self.scalers[series_id]['price']
+
+        # scaler_price = self.scalers[gpu_name]['price']      # B. name scale
 
         for i in range(total_steps):
             X_input = sequence[['price_scaled', 'mean_scaled_7', 'std_scaled_7',
