@@ -274,4 +274,5 @@ if __name__ == "__main__":
     root.mainloop()
 
     # Tkinter GUI 종료 후 전체 이미지 저장
+    print("이미지 저장을 시작합니다...")
     app.predict_all_and_save()
