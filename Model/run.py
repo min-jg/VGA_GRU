@@ -144,7 +144,7 @@ class PricePredictorApp:
             # ✅ warm-up 현상 진단: 첫 입력 대비 예측값 확인
             if i == 0:
                 last_scaled = sequence['price_scaled'].iloc[-1]
-                print(f"🔥 Warm-up 진단용")
+                print(f" Warm-up 진단용")
                 print(f" - 입력 마지막 price_scaled: {last_scaled:.4f}")
                 print(f" - 첫 예측 pred_scaled: {pred_scaled:.4f}")
                 print(f" - 첫 예측 역정규화 결과: {pred_real:,.0f}원")

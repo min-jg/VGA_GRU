@@ -66,15 +66,13 @@ def add_rolling_features(df):
         df[mean_col] = (
             df.groupby('name')['avg_price']
             .transform(lambda x: x.rolling(window).mean())
-            .bfill()
-            .ffill()
+            .bfill().ffill()
         )
 
         df[std_col] = (
             df.groupby('name')['avg_price']
             .transform(lambda x: x.rolling(window).std())
-            .bfill()
-            .ffill()
+            .bfill().ffill()
         )   # ~C
 
     scaler = {}

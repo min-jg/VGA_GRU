@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import GRU, Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
@@ -32,10 +33,22 @@ def train_dat():
 
     # 3. 학습
     # early_stop = EarlyStopping(patience=10, restore_best_weights=True)                                  # A. 기존 방식
-    # model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop])
+    # history = model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop])
     early_stop = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)              # B. lr 추가 방식
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3, min_lr=1e-6, verbose=1)
-    model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop, reduce_lr])
+    history = model.fit(X, y, epochs=50, batch_size=32, validation_split=0.2, shuffle=False, callbacks=[early_stop, reduce_lr])
+
+    plt.figure(figsize=(8, 4))
+    plt.plot(history.history['loss'], label='Train Loss')
+    plt.plot(history.history['val_loss'], label='Validation Loss')
+    plt.xlabel("Epoch")
+    plt.ylabel("MSE Loss")
+    plt.title("Training vs Validation Loss")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("Model/loss_plot.png")
+    plt.show()
 
     # 4. 저장
     model.save("Model/gru_model.h5")
