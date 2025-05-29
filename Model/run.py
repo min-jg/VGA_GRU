@@ -169,6 +169,19 @@ class PricePredictorApp:
                 next_row = df_gpu.iloc[i + self.seq_len].copy()
             else:
                 next_row = sequence.iloc[-1].copy()
+                next_row['date'] = current_date
+                next_row['price_scaled'] = pred_scaled
+
+                temp_sequence = sequence.copy()
+                temp_sequence = pd.concat([temp_sequence, pd.DataFrame([next_row])], ignore_index=True)
+
+                window_7 = temp_sequence['price_scaled'].rolling(window=7, min_periods=1)
+                window_30 = temp_sequence['price_scaled'].rolling(window=30, min_periods=1)
+
+                next_row['mean_scaled_7'] = window_7.mean().iloc[-1]
+                next_row['std_scaled_7'] = window_7.std(ddof=0).iloc[-1]
+                next_row['mean_scaled_30'] = window_30.mean().iloc[-1]
+                next_row['std_scaled_30'] = window_30.std(ddof=0).iloc[-1]
 
             next_row['price_scaled'] = pred_scaled  # ✅ 업데이트된 가격 사용
             next_row_df = pd.DataFrame([next_row])
