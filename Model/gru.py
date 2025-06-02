@@ -75,7 +75,7 @@ def add_rolling_features(df):
             .bfill().ffill()
         )   # ~C
 
-    scaler = {}
+    scalers = {}
     # name_scaler = {}    # 역정규화를 위한 name scale
 
     for sid, group in df.groupby('series_id'):  # A. series scale
@@ -86,13 +86,16 @@ def add_rolling_features(df):
 
         # A. 데이터 전체
         scaler_price = MinMaxScaler()
-        scaler_mean = MinMaxScaler()
-        scaler_std = MinMaxScaler()
+        scaler_mean_7 = MinMaxScaler() # 변경: 각 mean, std 피처에 개별 스케일러
+        scaler_std_7 = MinMaxScaler()
+        scaler_mean_30 = MinMaxScaler()
+        scaler_std_30 = MinMaxScaler()
         df.loc[group.index, 'price_scaled'] = scaler_price.fit_transform(group[['avg_price']])
-        df.loc[group.index, 'mean_scaled_7'] = scaler_mean.fit_transform(group[['rolling_mean_7']])
-        df.loc[group.index, 'std_scaled_7'] = scaler_std.fit_transform(group[['rolling_std_7']])
-        df.loc[group.index, 'mean_scaled_30'] = scaler_mean.fit_transform(group[['rolling_mean_30']])
-        df.loc[group.index, 'std_scaled_30'] = scaler_std.fit_transform(group[['rolling_std_30']])
+        df.loc[group.index, 'mean_scaled_7'] = scaler_mean_7.fit_transform(group[['rolling_mean_7']])
+        df.loc[group.index, 'std_scaled_7'] = scaler_std_7.fit_transform(group[['rolling_std_7']])
+        df.loc[group.index, 'mean_scaled_30'] = scaler_mean_30.fit_transform(group[['rolling_mean_30']])
+        df.loc[group.index, 'std_scaled_30'] = scaler_std_30.fit_transform(group[['rolling_std_30']])
+
 
         # # B. 이상치 제외한 범위로 정규화 스케일러 fit
         # q_low = group['avg_price'].quantile(0.01)
@@ -118,10 +121,13 @@ def add_rolling_features(df):
         # df.loc[group.index, 'mean_scaled_30'] = scaler_mean_30.transform(group[['rolling_mean_30']])
         # df.loc[group.index, 'std_scaled_30'] = scaler_std_30.transform(group[['rolling_std_30']])
 
-        scaler[sid] = { # A. series scale
+        scalers[sid] = { # A. series scale
         # scaler[name] = { # B. name scale
-            'price': scaler_price, 'mean_7': scaler_mean, 'std_7': scaler_std,
-            'mean_30': scaler_mean, 'std_30': scaler_std
+            'price': scaler_price,
+            'mean_7': scaler_mean_7,
+            'std_7': scaler_std_7,
+            'mean_30': scaler_mean_30,
+            'std_30': scaler_std_30
         }
 
     # # ✅ 예측 후 복원을 위한 name 단위 scaler 추가 저장
@@ -130,7 +136,7 @@ def add_rolling_features(df):
     #     scaler_price.fit(group[['avg_price']])
     #     name_scaler[name] = {'price': scaler_price}
 
-    return df, scaler#, name_scaler  # name_scaler 추가
+    return df, scalers#, name_scaler  # name_scaler 추가
 
 # 시퀸스 생성
 def create_sequences(df_group, seq_len):

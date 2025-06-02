@@ -11,7 +11,7 @@ import joblib
 def train_dat():
     # 1. 데이터 전처리
     df = assign_metadata(df_all.copy())
-    df, _ = add_rolling_features(df)                    # A. series 단일 scale
+    df, scalers = add_rolling_features(df) # 스케일러를 받아옴
     # df, scaler, name_scaler = add_rolling_features(df)  # B. 역정규화 name scale 추가
     data = generate_all_sequences(df, seq_len=20)
 
@@ -53,6 +53,10 @@ def train_dat():
     # 4. 저장
     model.save("Model/gru_model.h5")
     print("✅ 모델 저장 완료: gru_model.h5")
+
+    # 5. 모든 스케일러를 딕셔너리 형태로 저장
+    joblib.dump(scalers, "Model/scalers.pkl")
+    print("✅ 스케일러 저장 완료: scalers.pkl")
 
     # # 5. 이름 기반 scaler도 저장
     # joblib.dump(name_scaler, "Model/name_scaler.pkl")

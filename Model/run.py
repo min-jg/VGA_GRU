@@ -28,14 +28,56 @@ class PricePredictorApp:
 
         self.df = df_all.copy()
         self.df = assign_metadata(self.df)
-        self.df, self.scalers = add_rolling_features(self.df)                   # A. series > series 복원
+        # self.df, self.scalers = add_rolling_features(self.df)                   # A. series > series 복원
         # self.df, self.scalers, self.name_scaler = add_rolling_features(self.df) # B. series > name 복원
+
+        try:
+            self.scalers = joblib.load("Model/scalers.pkl")
+            # 스케일러 로드 후, 원본 df_all에 스케일링 적용
+            # df_temp, _ = add_rolling_features(df_all.copy()) # 이 방법은 비효율적일 수 있으니 아래의 더 나은 방법 고려
+            # -> 예측에 필요한 'price_scaled', 'mean_scaled_7', 'std_scaled_7', 'mean_scaled_30', 'std_scaled_30' 칼럼을
+            #    원본 df_all에 스케일러를 사용하여 직접 추가해주는 방식이 더 안전합니다.
+
+            # --- 더 나은 방식: df_all을 직접 스케일링 ---
+            temp_df_for_scaling, _ = add_rolling_features(self.df.copy())  # rolling features만 생성
+            for sid, group in temp_df_for_scaling.groupby('series_id'):
+                if sid in self.scalers:  # 학습된 스케일러가 해당 series_id에 존재하는지 확인
+                    scaler_obj = self.scalers[sid]
+
+                    # 각 피쳐별 스케일러를 사용하여 transform
+                    self.df.loc[group.index, 'price_scaled'] = scaler_obj['price'].transform(group[['avg_price']])
+                    self.df.loc[group.index, 'mean_scaled_7'] = scaler_obj['mean_7'].transform(
+                        group[['rolling_mean_7']])
+                    self.df.loc[group.index, 'std_scaled_7'] = scaler_obj['std_7'].transform(group[['rolling_std_7']])
+                    self.df.loc[group.index, 'mean_scaled_30'] = scaler_obj['mean_30'].transform(
+                        group[['rolling_mean_30']])
+                    self.df.loc[group.index, 'std_scaled_30'] = scaler_obj['std_30'].transform(
+                        group[['rolling_std_30']])
+                else:
+                    # 해당 series_id에 대한 스케일러가 없을 경우 (예: 새로운 GPU 데이터)
+                    # 이 부분은 어떻게 처리할지 정책을 정해야 합니다. (예: 해당 데이터 제외 또는 전체 데이터로 다시 학습)
+                    print(f"경고: series_id={sid} 에 대한 학습된 스케일러가 없습니다. 해당 데이터 스케일링 불가.")
+                    # 필요한 경우 df에서 해당 series_id의 행을 제거하거나 기본 스케일러 적용 등
+                    self.df = self.df[self.df['series_id'] != sid].copy()
+
+
+        except FileNotFoundError:
+            print("스케일러 파일이 없습니다. train.py를 먼저 실행하여 모델과 스케일러를 학습/저장하세요.")
+            # 또는 여기서 train_dat()를 호출하여 학습시키고 다시 로드하도록 할 수도 있습니다.
+            # train_dat()
+            # self.scalers = joblib.load("Model/scalers.pkl")
+            return
 
         self.seq_len = 20
         self.gpu_list = sorted(self.df['name'].unique())
 
-        # self.name_scaler = joblib.load("Model/name_scaler.pkl")  # ✅ 추가
         self.create_widgets()
+
+        # self.seq_len = 20
+        # self.gpu_list = sorted(self.df['name'].unique())
+        #
+        # # self.name_scaler = joblib.load("Model/name_scaler.pkl")  # ✅ 추가
+        # self.create_widgets()
 
     def create_widgets(self):
         ttk.Label(self.root, text="그래픽카드 선택:").pack(pady=10)
