@@ -51,7 +51,7 @@ def insert_csv_to_db(file_path, table_name, cursor):
         print(f"예외 발생 ({file_path}): {e}")
 
 def run():
-    data_folder = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Data")
+    data_folder = "Data"
     table_mapping = {
         "VGA.csv": "vga_price",
     }
@@ -59,7 +59,7 @@ def run():
     conn = get_connection()
     cursor = conn.cursor()
 
-    for year in range(2023, 2026):
+    for year in range(2020, 2026):
         for month in range(1, 13):
             folder_name = f"{year}-{month:02d}"
             folder_path = os.path.join(data_folder, folder_name)
